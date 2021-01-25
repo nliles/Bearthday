@@ -6,7 +6,7 @@ import styles from './index.module.css';
 const HomePage = (props) => {
 
   const handleSubmit = (date) => {
-    return props.history.push(`/images/${date}`);
+   return props.history.push(`/images/${date}`);
   }
 
   return (
