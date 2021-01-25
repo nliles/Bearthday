@@ -1,0 +1,20 @@
+.header {
+  height: 50px;
+	background-color: #191308;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  margin-left: 30px;
+}
+
+.title {
+  font-size: 24px;
+}
+
+.link {
+  text-decoration: none;
+  color: #fff;
+}
