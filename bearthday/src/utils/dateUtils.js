@@ -43,7 +43,7 @@ export function findDate(dates, date) {
   if (!dates.length || ! date) return null;
   const sorted = dates.slice().reverse();
   let index = _sortedIndex(sorted, date);
-  // If there is no next index, use previous index;
+  // If there is no index, use previous index;
   if (!sorted[index]) index = index - 1;
   return sorted[index];
 }
