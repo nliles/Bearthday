@@ -11,7 +11,6 @@ const Slider = ({ date, img }) => {
     )
 }
 
-
 Slider.propTypes = {
   date: PropTypes.string,
   img: PropTypes.string,
