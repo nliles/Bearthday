@@ -7,7 +7,7 @@ import {
 import './App.css';
 import NavBar from './components/NavBar';
 import HomePage from './components/home/HomePage';
-import ImageView from './components/images/ImageView';
+import ImageViewContainer from './components/images/ImageViewContainer';
 
 function App() {
   return (
@@ -17,7 +17,7 @@ function App() {
          <Route exact path="/" component={HomePage} />
          <Route exact
          path="/images/:date"
-         component={ImageView}/>
+         component={ImageViewContainer}/>
        </Switch>
    </Router>
   );
