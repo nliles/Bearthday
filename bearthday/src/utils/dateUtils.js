@@ -41,7 +41,7 @@ export function getRecentDate(date) {
 // Find a date in an array
 export function findDate(dates, date) {
   if (!dates.length || ! date) return null;
-  const sorted = dates.reverse();
+  const sorted = dates.slice().reverse();
   let index = _sortedIndex(sorted, date);
   // If there is no next index, use previous index;
   if (!sorted[index]) index = index - 1;
