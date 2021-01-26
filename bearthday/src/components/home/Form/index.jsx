@@ -1,9 +1,7 @@
 import React, { useState } from "react";
 import PropTypes from 'prop-types';
 import styles from './index.module.css';
-import moment from 'moment'
-
-const CURRENT_DATE = moment().format("YYYY-MM-DD");
+import { CURRENT_DATE } from '../../../utils/dateUtils'
 
 const Form = ({ handleSubmit }) => {
 const [date, setDate] = useState('');
@@ -14,10 +12,8 @@ const handleChange = (e) => {
 
 const onSubmit = (e) => {
   e.preventDefault();
-  if (moment(date).isValid()) {
-    handleSubmit(date);
-    setDate('')
-  }
+  handleSubmit(date);
+  setDate('');
 }
 
  return (
